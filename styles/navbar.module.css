@@ -1,0 +1,135 @@
+/* latest navbar */
+
+.navbar-container {
+    /* From https://css.glass */
+    background: rgba(214, 208, 208, 0.43);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    z-index: 1000;
+    color: black;
+    border-bottom: 1px ridge grey;
+}
+
+/* @media (max-width: 800px) {
+
+} */
+
+.logo {
+    width: 136px;
+    height: 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    /* background: #00828c; */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    list-style-type: none;
+    width: auto;
+}
+
+.nav-links > li {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    /* padding: 5px 5px; */
+    /* margin: 0 10px; */
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        position: fixed;
+        list-style: none;
+        left: 0;
+        top: 60px;
+        height: 90vh;
+        transition: all 1s ease-out;
+        width: 100%;
+        background: var(--background);
+    }
+
+    .nav-links-mobile li > a {
+        color: black;
+        text-align: center;
+        padding: 20px 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        transition: all 1s ease;
+    }
+
+    .logo-website {
+        width: 55%;
+    }
+
+    .services-li:hover .services-menu {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        font-size: 8px;
+        background: var(--green);
+        color: white;
+    }
+
+    .dropdown-menu > li > a {
+        margin: 15px 0;
+        padding: 0;
+    }
+}
+
+
+.navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* .navbar-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+} */
+
+.dropdown-menu {
+    display: none;
+    list-style-type: none;
+    background-color: var(--green);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.navbar-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+@media screen and (max-width: 780px) {
+    .navbar-dropdown:hover .dropdown-menu {
+        position: static;
+    }
+
+    .dropdown-menu > li > a {
+        color: white;
+    }
+}
+
+.dropdown-menu > li > a {
+    color: white;
+}

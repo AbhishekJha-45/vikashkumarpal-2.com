@@ -1,0 +1,17 @@
+@media (width >= 800px) {
+    .table_of_contents {
+        width: 20%;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .social_icons {
+        width: 15%;
+    }
+}
+
+@media (width < 800px) {
+
+}

@@ -1,0 +1,9 @@
+.newsletter {
+    position: relative;
+    background-image: url('../assets/Images/abstract.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    opacity: 1;
+}
+

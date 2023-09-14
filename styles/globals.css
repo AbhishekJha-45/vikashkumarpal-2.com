@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabriela&display=swap");
+/* styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    --green: #052a26;
+    --yellow: #ffce4f;
+    --background: #eeeeee;
+}
+
+.green {
+    color: var(--green);
+}
+
+.yellow {
+    color: var(--yellow);
+}
+
+.background {
+    background-color: var(--background);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* list items gap   */
+ul > li,
+ol > li {
+    padding: 8px 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+    /* max-width: 100vw; */
+}
+
+/* p {
+  font-size: 16px;
+  line-height: 1.5;
+} */
+a {
+    font-size: 16px;
+    color: #052a26;
+}
+
+nav li {
+    font-size: 20px;
+}
+
+h1 {
+    color: var(--green);
+}
+
+h2 {
+    font-family: Gabriela;
+    color: var(--green);
+}
+
+h3 {
+    font-family: Gabriela;
+    color: var(--green);
+}
+
+h4 {
+    font-family: Gabriela;
+    color: var(--green);
+}
+
+h5 {
+    font-family: Gabriela;
+    color: var(--green);
+}
+
+/* mobile view */
+@media (width < 800px) {
+    .container-home {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 16px 0;
+    }
+
+    h1 {
+        font-size: 31px;
+        line-height: 1.5;
+        font-family: Gabriela;
+    }
+
+    h2 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .container-new {
+        width: 100%;
+        height: auto;
+        padding: 0 0.75rem;
+    }
+
+    /* .container-services {
+      width: 100%;
+      padding: 0 0.75rem;
+    } */
+    .ellipsis-2l-phone {
+        display: -webkit-box;
+        width: auto;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+/* desktop view */
+@media (width >= 800px) {
+    .container-home {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-left: 12%;
+        padding-right: 12%;
+        box-sizing: border-box;
+        /* overflow-y: hidden; */
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 60px;
+        font-family: "Sans-serif";
+        font-style: normal;
+        font-weight: 600;
+        line-height: 82px;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-family: "Gabriela";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+
+        /* line-height: 51px; */
+        text-align: center;
+        color: #052a26;
+    }
+
+    p {
+        font-size: 18px;
+        margin: 20px 0 0 0;
+        /* on 3 july previously  it was margin:32px 0; line height was 1.5 font size was 16px*/
+        line-height: 1.6;
+    }
+
+    h3 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    h4 {
+        font-size: 19px;
+    }
+
+    .container-new {
+        width: 100vw;
+        height: auto;
+        padding: 3.75rem 4rem;
+    }
+
+    .logo-carousel-div > img {
+        width: 100%;
+        position: relative;
+        height: 150px;
+        object-fit: contain;
+    }
+
+    .logo-carousel-div {
+        margin: 0 20px;
+    }
+
+    .container-services {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .blog-hero-section-top-image {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+/* .var-font-green {
+  color: "052a26";
+} */
+
+.para-ellipsis {
+    display: -webkit-box;
+    width: auto;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.abstract-image {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+}
+
+.para-2 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.shadow-home {
+    /* box-shadow: 0 0 13px grey; */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25),
+    inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.hover-yellow:hover {
+    background: var(--yellow);
+    color: var(--green);
+    transition: 0.5s all ease-in-out;
+}
+
+.input-contact {
+    outline: 1px solid black;
+}
+
+.para-m-0 {
+    margin: auto auto;
+}
+
+.ellipsis-2l {
+    display: -webkit-box;
+    width: auto;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.category-button:hover {
+    background-color: var(--green);
+    color: var(--yellow);
+}
+
+.btn-pagination {
+    width: 35px;
+    height: 35px;
+    font-size: 13px;
+    text-align: center;
+    background: #ffff;
+    box-shadow: 0 0 5px grey;
+}
+
+.btn-pagination:active {
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+    box-shadow: none;
+}
+
+/* [blog].js */
+.heading-herosection-card:hover > a {
+    color: blue;
+}
+
+/* rating card */
+.rating-icon:hover {
+    transition: all 0.1s infinite linear;
+    font-size: 55px;
+}
+
+/* for extra large sceens >1500px */
+@media (width > 1500px) {
+    .latestpost-h1 {
+        text-align: center;
+    }
+}
+
+code {
+    background: lightslategrey;
+    padding: .5rem
+}
