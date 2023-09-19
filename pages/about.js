@@ -7,10 +7,12 @@ import Home_Section_7 from "@components/Home_Section_7";
 import Home_Section_12 from "@components/Home_Section_12";
 import Home_Section_13 from "@components/Home_Section_13";
 import Home_Section_8 from "@components/Home_Section_8";
+import Header from "@utils/Header";
 
 export default function page() {
     return (
         <main className="lg:pt-14" style={{background: "var(--background)"}}>
+            <Header pageName={'about-me'}/>
             <div className="container-home lg:pt-10 px-3">
                 <h1 className="text-center lg:pt-14 pt-20">About Me</h1>
                 <p className="lg:text-center">

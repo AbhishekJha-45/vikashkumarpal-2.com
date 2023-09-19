@@ -1,8 +1,9 @@
+import styles from '@styles/loader.module.css'
+
 const loading = () => {
     return (
-        <>
-            <h2>loading from loading component</h2>
-        </>
+           <div className={styles.loader}></div>
+
     )
 }
 

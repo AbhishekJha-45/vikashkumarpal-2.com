@@ -214,3 +214,65 @@ export async function getPostBySlug(slug) {
 }
 
 
+export default async function getHeader(pageName) {
+    try {
+        const response = await fetch('https://admin.vikashkumarpal.com/graphql', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                query: `
+query getHeader {
+  page(id: "${pageName}", idType: URI) {
+      dateGmt
+    slug
+    title
+    author{
+      node{
+        avatar{
+          url
+        }
+        name
+      }
+    }
+    featuredImage{
+      node{
+        mediaItemUrl
+      }
+    }
+    seo {
+      canonicalUrl
+      description
+      jsonLd {
+        raw
+      }
+      openGraph {
+        description
+        locale
+        title
+        updatedTime
+      }
+      robots
+    }
+  }
+    }
+  
+                `,
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+
+        const data = await response.json();
+        return data.data.page;
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        return null;
+    }
+}
+
+
+

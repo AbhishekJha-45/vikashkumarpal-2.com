@@ -5,41 +5,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="nextjs 12 application initial commit">
+      <change afterPath="$PROJECT_DIR$/assets/components/CardsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/CarouselTestimonial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Skeleton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/authors/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/case-study/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/case-study/[slug]/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/case-study/latestposts/page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/general.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/loader.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Case_Study_Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Case_Study_Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Contact_Form_Format.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Contact_Form_Format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/404.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/[slug]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[slug]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/latestposts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/latestposts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/case-study.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/case-study/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/graphQlquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/graphQlquery.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AbhishekJha-45"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AbhishekJha-45&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="102fd26d-9767-42c6-a315-498cf3948251" />
-        <option name="url" value="https://github.com/AbhishekJha-45/vikashkumarpal.com.git" />
+        <option name="url" value="https://github.com/AbhishekJha-45/vikashkumarpal-2.com.git" />
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2VRCU5H79J8whCUEA2FCp5fm3Hf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/abhishek_jha/Desktop/Desktop/next-js-12",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/abhishek_jha/Desktop/Desktop/next-js-12/pages/authors&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -48,8 +99,41 @@
       </map>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/authors" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/case-study" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="nextjs 12 application initial commit">
+      <option name="closed" value="true" />
+      <created>1694704579903</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694704579903</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="nextjs 12 application initial commit" />
+      <created>1694789535456</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1694789535456</updated>
+      <workItem from="1694789539676" duration="5644000" />
+      <workItem from="1694838822553" duration="23943000" />
+      <workItem from="1694951353478" duration="10294000" />
+      <workItem from="1695125347167" duration="206000" />
+      <workItem from="1695125608127" duration="5301000" />
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -57,6 +141,11 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -76,5 +165,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="nextjs 12 application initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="nextjs 12 application initial commit" />
   </component>
 </project>

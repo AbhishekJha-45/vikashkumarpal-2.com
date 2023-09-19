@@ -1,15 +1,17 @@
-import {getPostsByCategory} from "@utils/graphQlquery";
+import getHeader, {getPostsByCategory} from "@utils/graphQlquery";
 import Blog_Section_1 from "@assets/components/Blog_Section_1";
 import IntroComponentPage from "@assets/components/IntroComponentPage";
 import Home_Section_8 from "@assets/components/Home_Section_8";
 import Card_Section_10 from "@assets/components/Card_Section_10";
-import {Suspense} from "react";
+import React, {Suspense} from "react";
 import Blog_Hero_Section from "@assets/components/Blog_Hero_Section";
 import {months} from "@utils/date";
 import Home_Section_13 from "@components/Home_Section_13";
 import Home_Section_12 from "@components/Home_Section_12";
 import Home_Section_11 from "@components/Home_Section_11";
 import Head from "next/head";
+import Loading from "@pages/loading";
+import Header from "@utils/Header";
 
 
 export async function getServerSideProps() {
@@ -24,7 +26,7 @@ export async function getServerSideProps() {
             keywordresearch: keywordresearch.posts.edges,
             onpageseo: onpageseo.posts.edges,
             localseo: localseo.posts.edges,
-            latestposts: latestposts.posts.edges
+            latestposts: latestposts.posts.edges,
         }
     }
 }
@@ -35,14 +37,9 @@ export default function blog({latestposts, generalseo, keywordresearch, onpagese
     const day = createdDate.getDate();
     const localizedDate = `${month} ${day}`;
     const url = `/blog/${generalseo.node.slug}`;
-    // console.log(url)
-    return (<Suspense fallback={<>Locading...</>}>
-
-
-        <Head>
-            <title>thisi is index</title>
-        </Head>
+    return (<Suspense fallback={<Loading/>}>
         <section style={{background: "var(--background)"}}>
+            <Header pageName='blog'/>
             <section className="container-services px-3">
                 <IntroComponentPage
                     heading="Blog"
@@ -78,7 +75,7 @@ export default function blog({latestposts, generalseo, keywordresearch, onpagese
                         src={featuredImage?.node?.mediaItemUrl}
                         post_url={`/blog/${slug}`}
                         title={title}
-                        para={title}
+                        // para={title}
                         readTime="8 Min Read "
                         date={localizedDate}
                         authorName={author.node.name}

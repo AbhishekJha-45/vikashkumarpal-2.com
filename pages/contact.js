@@ -1,3 +1,8 @@
-export default function about() {
-    return <h1>about</h1>
+import Header from "@utils/Header";
+
+export default function contact() {
+    return <>
+        <Header pageName='contact'/>
+        <h1>Contact</h1>
+    </>
 }

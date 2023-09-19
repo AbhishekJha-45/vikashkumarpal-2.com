@@ -1,3 +1,8 @@
-export default function about() {
-    return <h1>about</h1>
+import Header from "@utils/Header";
+
+export default function termsAndConditions() {
+    return <>
+        <Header pageName='terms-and-conditions'/>
+        <h1>terms-and-conditions</h1>
+    </>
 }

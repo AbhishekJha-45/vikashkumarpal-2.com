@@ -33,18 +33,6 @@ export default function Contact_Form_Format(props) {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const res = await fetch("/api/contact", {
-            method: "POST",
-            headers: {"Content-Type": "application/json; charset=UTF-8"},
-            body: JSON.stringify({
-                name,
-                email,
-                website,
-                businessName,
-                service,
-                message,
-            }),
-        });
         const {msg} = await res.json();
         setError(msg);
         console.log(error);
@@ -59,7 +47,7 @@ export default function Contact_Form_Format(props) {
                 aria-label="contact form"
                 name="contact form"
                 style={{boxShadow: "0 0 2px grey"}}
-                onSubmit={handleSubmit}
+                // onSubmit={handleSubmit}
             >
                 <h2 className="font-semibold pb-5 ml-3 lg:mx-5">Contact Us</h2>
                 <p

@@ -21,11 +21,12 @@ export default async function Case_Study_Card(props) {
                 href={"/"}
                 className="rounded-full text-white p-2 text-sm my-7"
                 style={{
-                    background: "var(--green)",
+                    background: "red",
                     outline: "2px double #ffce4f",
                 }}
             >
-                <button>Learn More</button>
+                <button>Learn More
+                </button>
             </Link>
         </div>
     );

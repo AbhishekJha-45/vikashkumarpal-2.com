@@ -12,6 +12,7 @@ import Loading from "@pages/loading";
 import blog from "@styles/blogpost.module.css"
 import Accordion from "@components/accordion";
 import CustomHead from "./customHead"
+import Head from "next/head";
 
 export async function getServerSideProps(context) {
     const {slug} = context.query;
@@ -52,26 +53,15 @@ export default function index({post}) {
     // console.log(seo)
     return (
         <Suspense fallback={<Loading/>}>
-            {/*head component goes here */}
-            {/*<Head>*/}
-            {/*    <title>{title}</title>*/}
-            {/*    <meta name="description" content={seo.description}/>*/}
-            {/*    <meta name="keywords" content={seo.focusKeywords}/>*/}
-            {/*    <meta property="og:title" content={seo.openGraph.title}/>*/}
-            {/*    <meta property="og:description" content={seo.description}/>*/}
-            {/*    <meta property="og:image" content={seo.openGraph.image.url}/>*/}
-            {/*</Head>*/}
             <section
                 className="lg:pt-28 pt-14 px-3 lg:px-0 relative"
                 style={{background: "var(--background)"}}
             >
-                <CustomHead title={title} description={seo.description} keywords={seo.focusKeywords}
+                <CustomHead title={title} description={seo.description}
                             ogTitle={seo.openGraph.title} ogDescription={seo.description}
                             ogImage={seo.openGraph.image.url} seo={seo}
                             date={date} author={author.node.name}
                 />
-
-
                 <section className="container-services lg:pt-14 pt-10">
                     <div
                         className="container-services  lg:pb-14 grid lg:grid-cols-2 grid-cols-1 justify-center items-center gap-y-10 lg:gap-y-0"

@@ -7,10 +7,12 @@ import Home_Section_11 from "@components/Home_Section_11";
 import Home_Section_12 from "@components/Home_Section_12";
 import Home_Section_13 from "@components/Home_Section_13";
 import Home_Section_8 from "@components/Home_Section_8";
+import Header from "@utils/Header";
 
 export default function page() {
     return (
         <main style={{background: "var(--background)"}} className="pt-14">
+            <Header pageName="portfolio"/>
             <div className=" container-services px-3">
                 <IntroComponentPage
                     heading="Portfolio"
