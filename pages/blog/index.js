@@ -20,6 +20,7 @@ export async function getServerSideProps() {
     const onpageseo = await getPostsByCategory('On-Page Seo', 3)
     const latestposts = await getPostsByCategory('latest', 5)
     const localseo = await getPostsByCategory('Local Seo', 3)
+    const headerData = await getHeader('blog');
     return {
         props: {
             generalseo: generalseo.posts.edges[0],
@@ -27,11 +28,12 @@ export async function getServerSideProps() {
             onpageseo: onpageseo.posts.edges,
             localseo: localseo.posts.edges,
             latestposts: latestposts.posts.edges,
+            headerData: headerData
         }
     }
 }
 
-export default function blog({latestposts, generalseo, keywordresearch, onpageseo, localseo}) {
+export default function blog({latestposts, generalseo, keywordresearch, onpageseo, localseo,headerData}) {
     const createdDate = new Date(generalseo.node.date);
     const month = months[createdDate.getMonth()];
     const day = createdDate.getDate();
@@ -39,7 +41,7 @@ export default function blog({latestposts, generalseo, keywordresearch, onpagese
     const url = `/blog/${generalseo.node.slug}`;
     return (<Suspense fallback={<Loading/>}>
         <section style={{background: "var(--background)"}}>
-            <Header pageName='blog'/>
+            <Header headerData={headerData}/>
             <section className="container-services px-3">
                 <IntroComponentPage
                     heading="Blog"

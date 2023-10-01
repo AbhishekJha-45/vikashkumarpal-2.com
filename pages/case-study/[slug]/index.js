@@ -40,7 +40,7 @@ export default async function page({params}) {
     //     >
     //         <section
     //             style={{background: "var(--yellow)"}}
-    //             className={"lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-services pb-10 px-3"}>
+    //             className={"lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-service pb-10 px-3"}>
     //             {/*left side*/}
     //             <div className={"col-span-1 relative"}>
     //                 <h2 className={"text-start pt-10"}>
@@ -57,7 +57,7 @@ export default async function page({params}) {
     //             </div>
     //         </section>
     //         <section
-    //             className={"lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-services pt-10"}>
+    //             className={"lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-service pt-10"}>
     //             {/*left side*/}
     //             <div className={"col-span-1 relative"}>
     //                 <span>
@@ -77,7 +77,7 @@ export default async function page({params}) {
     //             </div>
     //         </section>
     //         <section
-    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-services pt-10"}>
+    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-service pt-10"}>
     //             {/*left side*/}
     //             <div className={"col-span-1 relative lg:order-2"}>
     //                 <span>
@@ -97,7 +97,7 @@ export default async function page({params}) {
     //             </div>
     //         </section>
     //         <section
-    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-services pt-10"}>
+    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-service pt-10"}>
     //             {/*left side*/}
     //             <div className={"col-span-1 relative"}>
     //                 <span>
@@ -117,7 +117,7 @@ export default async function page({params}) {
     //             </div>
     //         </section>
     //         <section
-    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-services pt-10"}>
+    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-service pt-10"}>
     //             {/*left side*/}
     //             <div className={"col-span-1 relative lg:order-2"}>
     //                 <span>
@@ -137,7 +137,7 @@ export default async function page({params}) {
     //             </div>
     //         </section>
     //         <section
-    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-services pt-10"}>
+    //             className={"  lg:grid grid-cols-2 flex flex-col lg:gap-0 gap-5 container-service pt-10"}>
     //             {/*left side*/}
     //             <div className={"col-span-1 relative"}>
     //                 <span>

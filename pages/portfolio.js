@@ -8,11 +8,18 @@ import Home_Section_12 from "@components/Home_Section_12";
 import Home_Section_13 from "@components/Home_Section_13";
 import Home_Section_8 from "@components/Home_Section_8";
 import Header from "@utils/Header";
+import getHeader, {getClientLogos} from "@utils/graphQlquery";
 
-export default function page() {
+export async function getStaticProps() {
+    const images = await getClientLogos();
+    const headerData = await getHeader('portfolio');
+    return {props: {images: images, headerData: headerData}};
+}
+
+export default function page({images, headerData}) {
     return (
         <main style={{background: "var(--background)"}} className="pt-14">
-            <Header pageName="portfolio"/>
+            <Header headerData={headerData}/>
             <div className=" container-services px-3">
                 <IntroComponentPage
                     heading="Portfolio"
@@ -27,7 +34,7 @@ export default function page() {
                     src={sidebarImageClir}
                 />
             </div>
-            <Home_Section_3/>
+            <Home_Section_3 images={images}/>
             <Services_Portfolio_Case/>
             <Home_Section_8/>
             <Home_Section_11/>

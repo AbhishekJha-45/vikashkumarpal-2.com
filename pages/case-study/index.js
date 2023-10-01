@@ -9,8 +9,22 @@ import Home_Section_11 from "@components/Home_Section_11";
 import Home_Section_10 from "@components/Home_Section_10";
 import CarouselTestimonial from "@components/CarouselTestimonial";
 import Header from "@utils/Header";
+import getHeader, {getAllCaseStudy, getCaseStudyPage, getClientLogos} from "@utils/graphQlquery";
 
-const CaseStudy = () => {
+
+export async function getStaticProps() {
+    const pageData = await getCaseStudyPage()
+    // const posts = await getAllCaseStudy()
+    const headerData = await getHeader('casestudy');
+    const images = await getClientLogos()
+    return {props: {posts: pageData, logos: images,headerData:headerData}, revalidate: 60}
+
+}
+
+const CaseStudy = ({posts,logos,headerData}) => {
+    const {dateGmt, author, featuredImage, caseStudyPage} = posts;
+    // console.log(logos)
+
     const cards = [
         {
             title: 'John Doe',
@@ -56,23 +70,23 @@ const CaseStudy = () => {
 
     return (
         <section className=''>
-            <Header pageName='casestudy'/>
+            <Header pageName='casestudy' headerData={headerData}/>
             <IntroComponentPage heading={'Case Study'}
-                                para={'I have helped businesses increase website rankings, amplified traffic, and maximized ROI for a diverse range of clients.'}/>
+                                para={caseStudyPage.csHeroContent}/>
             <div className='container-services lg:pxp-0 px-3'>
                 <Clir
                     spanTxt="Info"
-                    heading='this is  some heading'
-                    para='this is some para'
-                    btnTxt="Start Your SEO Journey Today"
+                    heading={caseStudyPage.csPageHeroHeading}
+                    para={caseStudyPage.csHeroContent}
+                    btnTxt={caseStudyPage.csCtaButton}
                     path="/contact"
-                    src='https://admin.vikashkumarpal.com/wp-content/uploads/2023/09/what-are-keywords-the-role-of-keywords-in-on-page-seo.png'
+                    src={featuredImage?.node?.mediaItemUrl}
                 />
             </div>
-            <Home_Section_3/>
+            <Home_Section_3 images={logos}/>
             <span className='flex justify-center items-center text-lg lg:pxp-0 px-3'>Services</span>
             <h2 className='pb-5 lg:pxp-0 px-3 text-center'>What we Offer</h2>
-            <CardsContainer />
+            <CardsContainer/>
             <CarouselTestimonial cards={cards}/>
             <Home_Section_8/>
             {/*<Home_Section_10/>*/}

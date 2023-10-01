@@ -1,4 +1,4 @@
-import Cards_seo_consulting_sec_8 from "@/app/services/seo-consulting/Cards_seo_consulting_sec_8";
+import Cards_seo_consulting_sec_8 from "@/app/service/seo-consulting/Cards_seo_consulting_sec_8";
 
 export default function Seo_Services_Section_5() {
     return (

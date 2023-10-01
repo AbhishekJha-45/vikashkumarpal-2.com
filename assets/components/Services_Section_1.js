@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "./Button";
-import "../app/services/services.css";
+import "@styles/general.module.css";
 
 export default function Services_Section_1(props) {
     return (

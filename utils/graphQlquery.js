@@ -1,6 +1,6 @@
 import graphQlReq from ".//GraphQlReq";
 
-//new utils endpoints route from graphql
+const serverUrl = "https://admin.vikashkumarpal.com/graphql";
 
 export async function getAllBlogPosts() {
     const query = {
@@ -225,9 +225,9 @@ export default async function getHeader(pageName) {
                 query: `
 query getHeader {
   page(id: "${pageName}", idType: URI) {
+      title
       dateGmt
     slug
-    title
     author{
       node{
         avatar{
@@ -257,8 +257,7 @@ query getHeader {
     }
   }
     }
-  
-                `,
+    `
             }),
         });
 
@@ -275,4 +274,246 @@ query getHeader {
 }
 
 
+export async function getAllCaseStudy() {
+    const apiUrl = 'https://admin.vikashkumarpal.com/graphql';
+
+    // Define your GraphQL query
+    const graphqlQuery = `
+query getCaseStudy {
+  caseStudies {
+    nodes {
+      title
+      singleCaseStudy {
+        csParaHero
+        csHeroCta
+        csHeroHighlights {
+          csHighlightIcon1 {
+            mediaItemUrl
+          }
+          csHighlightNumber1
+          csHighlightText1
+          csHighlightIcon2 {
+            mediaItemUrl
+          }
+          csHighlightNumber2
+          csHighlightText2
+          csHighlightIcon3 {
+            mediaItemUrl
+          }
+          csHighlightNumber3
+          csHighlightText3
+        }
+        csInnerHeading1
+        csInnerContent1
+        csInnerCtaButton
+        csInnerHeading2
+        csInnerContent2
+        csInnerCtaButton
+        csInnerHeading3
+        csInnerContent3
+        csInnerCtaButton
+        csInnerHeading4
+        csInnerContent4
+        csInnerCtaButton
+        csInnerHeading5
+        csInnerContent5
+        csInnerCtaButton
+        csCtaHeading
+        csInnerButton
+      }
+    }
+  }
+}
+  `;
+
+    // Make a POST request to the GraphQL API
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ query: graphqlQuery }),
+        });
+
+        if (!response.ok) {
+            throw new Error('GraphQL request failed');
+        }
+
+        const data = await response.json();
+        const caseStudies = data.data.caseStudies.nodes;
+            // console.log("from query",caseStudies)
+        return caseStudies;
+    } catch (error) {
+        console.error('Error fetching case studies:', error);
+        return [];
+    }
+}
+
+export async function getCaseStudyPage() {
+    const apiUrl = 'https://admin.vikashkumarpal.com/graphql';
+
+    const graphqlQuery = `
+query getCaseStudyPageData {
+  page(id: "casestudy", idType: URI) {
+    dateGmt
+    author {
+      node {
+        avatar {
+          url
+        }
+        name
+      }
+    }
+    featuredImage {
+      node {
+        mediaItemUrl
+      }
+    }
+    caseStudyPage {
+      csHeroContent
+      csPageHeroHeading
+      csPageParagraphContent
+        csCtaButton
+    }
+  }
+}
+  `;
+
+    // Make a POST request to the GraphQL API
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ query: graphqlQuery }),
+        });
+
+        if (!response.ok) {
+            throw new Error('GraphQL request failed');
+        }
+
+        const data = await response.json();
+        const caseStudies = data.data.page;
+        // console.log("from query",caseStudies)
+        return caseStudies;
+    } catch (error) {
+        console.error('Error fetching case studies:', error);
+        return [];
+    }
+}
+
+
+
+export async function getCaseStudiesCards() {
+    const apiUrl = 'https://admin.vikashkumarpal.com/graphql';
+
+    const graphqlQuery = `query getCaseStudies {
+    caseStudies {
+      nodes {
+        title
+        slug
+        dateGmt
+        featuredImage {
+          node {
+            mediaItemUrl
+          }
+        }
+        seo {
+          description
+        }
+      }
+    }
+  }`;
+
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ query: graphqlQuery }),
+        });
+
+        if (!response.ok) {
+            throw new Error('GraphQL request failed');
+        }
+
+        const data = await response.json();
+        const caseStudies = data.data.caseStudies.nodes;
+
+        return caseStudies;
+    } catch (error) {
+        console.error('Error fetching case studies:', error);
+        return [];
+    }
+}
+
+export async function getClientLogos() {
+    const apiUrl = serverUrl;
+
+    // Define the GraphQL query
+    const graphqlQuery = `query getClientLogos {
+    page(id: "logo-carousel", idType: URI) {
+      logoCarousel {
+        client1 {
+          mediaItemUrl
+        }
+        client2 {
+          mediaItemUrl
+        }
+        client3 {
+          mediaItemUrl
+        }
+        client4 {
+          mediaItemUrl
+        }
+        client5 {
+          mediaItemUrl
+        }
+        client6 {
+          mediaItemUrl
+        }
+        client7 {
+          mediaItemUrl
+        }
+        client8 {
+          mediaItemUrl
+        }
+        client9 {
+          mediaItemUrl
+        }
+        client10 {
+          mediaItemUrl
+        }
+      }
+    }
+  }`;
+
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ query: graphqlQuery }),
+        });
+
+        if (!response.ok) {
+            throw new Error('GraphQL request failed');
+        }
+
+        const data = await response.json();
+        const logoCarousel = data.data.page.logoCarousel;
+
+        // Extract the mediaItemUrl from each client object
+        const logoLinks = Object.values(logoCarousel).map((client) => client.mediaItemUrl);
+
+        return logoLinks;
+    } catch (error) {
+        console.error('Error fetching client logos:', error);
+        return [];
+    }
+}
 

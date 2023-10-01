@@ -1,4 +1,4 @@
-import Seo_Serv_Card_Section_4 from "@/app/services/seo-services/Seo_Serv_Card_Section_4";
+import Seo_Serv_Card_Section_4 from "@/app/service/seo-service/Seo_Serv_Card_Section_4";
 import React from "react";
 
 export default function Seo_Services_Section_4() {

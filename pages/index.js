@@ -10,26 +10,26 @@ import Home_section_9 from "@components/Home_section_9";
 import Home_Section_11 from "@components/Home_Section_11";
 import Home_Section_12 from "@components/Home_Section_12";
 import Home_Section_13 from "@components/Home_Section_13";
+import getHeader, {getClientLogos} from "@utils/graphQlquery";
+import Header from "@utils/Header";
 
-export const metadata = {
-    title: "Home Page",
-    description: "will update later on",
-    robots: {
-        index: false,
-        noimageindex: true,
-        follow: false,
-    },
-};
+export async function getStaticProps() {
+    const images=await getClientLogos();
+    const headerData = await getHeader('landing-page');
+    return {props: {images,headerData}, revalidate: 60}
+}
 
 
-export default function Home() {
+
+export default function Home({images,headerData}) {
     return (
         <main className="" style={{background: "var(--background)"}}>
+            <Header headerData={headerData}/>
             <Home_Section_1/>
             <Home_Section_2/>
-            <Home_Section_3/>
+            <Home_Section_3 images={images}/>
             <Home_section_4/>
-            <Home_Section_5/>
+            {/*<Home_Section_5/>*/}
             <Home_Section_6/>
             <Home_Section_7/>
             <Home_Section_8/>

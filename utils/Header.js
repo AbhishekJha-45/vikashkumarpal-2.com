@@ -1,31 +1,29 @@
-import React, {useEffect, useState} from 'react';
-import getHeader from "@utils/graphQlquery";
 import Head from "next/head";
 
-export default function Header({pageName}) {
-    const [headerData, setHeaderData] = useState(null);
 
-    useEffect(() => {
-        // Fetch header data using getHeader function
-        async function fetchData() {
-            try {
-                const data = await getHeader(pageName);
-                setHeaderData(data);
-            } catch (error) {
-                console.error('Error fetching header data:', error);
-            }
-        }
-
-        fetchData();
-    }, [pageName]);
-
-    // Check if data is still loading
-    if (!headerData) {
-        return <div>Loading...</div>;
-    }
+export default function Header({headerData}) {
+    // const [headerData, setHeaderData] = useState(null);
+    // useEffect(() => {
+    //     async function fetchData() {
+    //         try {
+    //             const data = await getHeader(pageName);
+    //             setHeaderData(data);
+    //         } catch (error) {
+    //             console.error('Error fetching header data:', error);
+    //         }
+    //     }
+    //
+    //     fetchData();
+    // }, [pageName]);
+    //
+    // // Check if data is still loading
+    // if (!headerData) {
+    //     return <p>Loading...</p>;
+    // }
 
     // Destructure the header data
     const {title, slug, dateGmt, author, seo, featuredImage} = headerData;
+
     const jsonLd = seo?.jsonLd.raw;
     const image = featuredImage?.node?.mediaItemUrl ? featuredImage.node.mediaItemUrl : 'https://admin.vikashkumarpal.com/wp-content/uploads/2023/08/vikash.webp';
     const regexPattern = /<script type="application\/ld\+json" class="rank-math-schema">(.*?)<\/script>/s;

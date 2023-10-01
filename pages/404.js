@@ -1,8 +1,19 @@
 import style from '@styles/general.module.css'
 import Link from "next/link";
-export default function NotFound() {
+import Header from "@utils/Header";
+import getHeader from "@utils/graphQlquery";
+
+export async function getStaticProps() {
+    const headerData = await getHeader('404-error');
+    return {
+        props: {headerData: headerData}, revalidate: 60
+    }
+}
+
+export default function NotFound({headerData}) {
     return (
         <section className={style.page_404}>
+            <Header headerData={headerData}/>
             <div className='container'>
                 <div className="row">
                     <div className="col-sm-12 ">
@@ -26,5 +37,5 @@ export default function NotFound() {
                 </div>
             </div>
         </section>
-        )
+    )
 }

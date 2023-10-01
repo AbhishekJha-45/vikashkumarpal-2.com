@@ -32,13 +32,13 @@ export default function Footer2() {
                             <li>About</li>
                         </Link>
                         <Link
-                            href={"/services"}
+                            href={"/service"}
                             className="  text-gray-500 hover:text-blue-600 transition-all duration-300 ease-linear"
                         >
                             <li>Services</li>
                         </Link>
                         <Link
-                            href={"services/seo-consulting"}
+                            href={"service/seo-consulting"}
                             className="  text-gray-500 hover:text-blue-600 transition-all duration-300 ease-linear"
                         >
                             <li>Consulting</li>

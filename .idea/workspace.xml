@@ -5,24 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="nextjs 12 application initial commit">
-      <change afterPath="$PROJECT_DIR$/assets/components/CardsContainer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/CarouselTestimonial.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/Skeleton.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/authors/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/case-study/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/case-study/[slug]/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/case-study/latestposts/page.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/general.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/loader.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/privacy-policy/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/service/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/Case_Study_Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Case_Study_Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/Contact_Form_Format.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Contact_Form_Format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/CardsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/CardsContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Clir.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Clir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/FaqComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/FaqComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Home_Section_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Home_Section_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Navbar2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Navbar2.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Section_9_card.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Section_9_card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Seo_Consulting_Section_8.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Seo_Consulting_Section_8.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Seo_Services_Section_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Seo_Services_Section_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Seo_Services_Section_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Seo_Services_Section_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Services_Section_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Services_Section_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Services_section_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Services_section_5.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/404.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/404.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog/[slug]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[slug]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blog/[slug]/customHead.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[slug]/customHead.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog/latestposts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/latestposts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/case-study.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/case-study/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/loading.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/case-study/[slug]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/case-study/[slug]/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/case-study/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/case-study/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/privacy-policy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/services/local-seo.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/service/local-seo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/terms-and-conditions.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/terms-and-conditions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/thank-you.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/thank-you.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/general.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/general.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/navbar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/navbar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/graphQlquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/graphQlquery.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,6 +104,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -96,6 +113,7 @@
       <map>
         <entry key="com.haulmont.rcb.reactComponents" value="false" />
         <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
       </map>
     </option>
   </component>
@@ -128,6 +146,10 @@
       <workItem from="1694951353478" duration="10294000" />
       <workItem from="1695125347167" duration="206000" />
       <workItem from="1695125608127" duration="5301000" />
+      <workItem from="1695384718643" duration="1458000" />
+      <workItem from="1695645027370" duration="11888000" />
+      <workItem from="1696136816629" duration="67000" />
+      <workItem from="1696136908247" duration="5507000" />
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />

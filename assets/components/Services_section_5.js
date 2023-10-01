@@ -26,7 +26,13 @@ export default function Services_section_5() {
                     services by Vikash aim to turn rankings into revenue by improving
                     clients' online visibility and driving more traffic to their websites.
                 </p>
-                <Button btnTxt="Learn More" path="/services"/>
+                <p>Vikash's SEO consulting process involves offering advice, analysis, and services to improve a
+                    website's visibility in organic search results. He provides comprehensive SEO strategies that cover
+                    both on-page and off-page factors. Furthermore, he assists with specific issues such as building
+                    backlinks, conducting keyword research, creating an SEO content strategy, auditing websites for
+                    technical errors or penalties, and measuring SEO performance and ROI.
+                </p>
+                <div className='pt-5'><Button btnTxt="Learn More" path="/services"/></div>
             </section>
         </main>
     );

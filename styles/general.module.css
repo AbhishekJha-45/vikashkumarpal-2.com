@@ -74,3 +74,23 @@
 .contant_box_404 {
     margin-top: -50px;
 }
+
+/*service page*/
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+    .small-div-sec-1 {
+        right: 0;
+        bottom: 5rem;
+    }
+    .card-seo-serv-sec-6{
+        min-height: 450px;
+    }
+}
+
+@media(min-width:1500px){
+    .cards-seo-consulting-sec-8{
+        padding: 0 13rem;
+    }
+    .card-seo-serv-sec-6{
+        min-height: 325px;
+    }
+}

@@ -10,10 +10,10 @@ export default function customHead(props) {
     // console.log(schemaJson)
     return (
         <Head>
-            <link rel="canonical" href={canonicalUrl}/>
             <title>{title}</title>
             <meta name="description" content={seo.description}/>
             <meta name='robots' content={seo.robots}/>
+            <link rel="canonical" href={canonicalUrl}/>
             <meta property="og:title" content={seo.openGraph.title}/>
             <meta property="og:type" content="article"/>
             <meta property="og:description" content={seo.description}/>

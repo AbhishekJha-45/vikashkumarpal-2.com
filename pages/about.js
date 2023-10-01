@@ -8,11 +8,17 @@ import Home_Section_12 from "@components/Home_Section_12";
 import Home_Section_13 from "@components/Home_Section_13";
 import Home_Section_8 from "@components/Home_Section_8";
 import Header from "@utils/Header";
-
-export default function page() {
+import getHeader from "@utils/graphQlquery";
+export async function getStaticProps() {
+    const headerData = await getHeader('about-me');
+    return {
+        props: {headerData: headerData}, revalidate: 60
+    }
+}
+export default function page({headerData}) {
     return (
         <main className="lg:pt-14" style={{background: "var(--background)"}}>
-            <Header pageName={'about-me'}/>
+            <Header  headerData={headerData}/>
             <div className="container-home lg:pt-10 px-3">
                 <h1 className="text-center lg:pt-14 pt-20">About Me</h1>
                 <p className="lg:text-center">

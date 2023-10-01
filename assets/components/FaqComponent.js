@@ -23,11 +23,11 @@ const FaqComponent = () => {
 
     const faqItems = [
         {
-            question: "What are SEO consulting services?",
+            question: "What are SEO consulting service?",
             answer: "Answer to question 1.",
         },
         {
-            question: "How SEO consulting services can help my business grow?",
+            question: "How SEO consulting service can help my business grow?",
             answer: "Answer to question 2.",
         },
         {

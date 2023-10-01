@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Section_9_Card(props) {
     return (
         <div
-            // index="services-cards"
+            // index="service-cards"
             className="shadow-home py-14 flex justify-center flex-col items-center"
             style={{
                 maxWidth: "500px",

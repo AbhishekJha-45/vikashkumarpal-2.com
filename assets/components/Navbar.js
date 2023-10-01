@@ -11,10 +11,10 @@
 
 // // const navigation = [
 // //   { name: "About Me", href: "/about", current: false },
-// //   { name: "Services", href: "/services", current: false },
+// //   { name: "Services", href: "/service", current: false },
 // //   {
 // //     name: "Seo Consulting",
-// //     href: "/services/seo-consulting",
+// //     href: "/service/seo-consulting",
 // //     current: false,
 // //   },
 // //   { name: "Portfolio", href: "/portfolio", current: false },
@@ -271,50 +271,50 @@
 //   },
 //   {
 //     name: "Services",
-//     href: "/services",
+//     href: "/service",
 //     serv: true,
-//     services: [
+//     service: [
 //       {
 //         name: "Local Seo",
-//         href: "/services/local-seo",
+//         href: "/service/local-seo",
 //       },
 //       {
 //         name: "E-Commerce Seo",
-//         href: "/services/ecommerce-seo",
+//         href: "/service/ecommerce-seo",
 //       },
 //       // {
 //       //   name: "Local Seo",
-//       //   href: "/services/local-seo",
+//       //   href: "/service/local-seo",
 //       // },
 //       // {
 //       //   name: "Local Seo",
-//       //   href: "/services/local-seo",
+//       //   href: "/service/local-seo",
 //       // },
 //       // {
 //       //   name: "Local Seo",
-//       //   href: "/services/local-seo",
+//       //   href: "/service/local-seo",
 //       // },
 //       // {
 //       //   name: "Local Seo",
-//       //   href: "/services/local-seo",
+//       //   href: "/service/local-seo",
 //       // },
 //       // {
 //       //   name: "Local Seo",
-//       //   href: "/services/local-seo",
+//       //   href: "/service/local-seo",
 //       // },
 //       // {
 //       //   name: "Local Seo",
-//       //   href: "/services/local-seo",
+//       //   href: "/service/local-seo",
 //       // },
 //       // {
 //       //   name: "Local Seo",
-//       //   href: "/services/local-seo",
+//       //   href: "/service/local-seo",
 //       // },
 //     ],
 //   },
 //   {
 //     name: "Seo Consulting",
-//     href: "/services/seo-consulting",
+//     href: "/service/seo-consulting",
 //     serv: false,
 //   },
 //   {
@@ -392,7 +392,7 @@
 //               <ListItemButton>
 //                 <Link href={page.href}>
 //                   <ListItemText primary={page.name} />
-//                   {services}
+//                   {service}
 //                 </Link>
 //               </ListItemButton>
 //             </ListItem>

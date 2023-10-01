@@ -2,13 +2,13 @@ import {useState} from "react";
 import logo from "@Images/logo-latest.png";
 import CloseIcon from "@mui/icons-material/Close";
 import Image from "next/image";
-import "@styles/navbar.module.css";
+import styles from "@styles/navbar.module.css";
 import Link from "next/link";
 
 export default function Navbar2() {
     const [isMobile, setIsMobile] = useState(false);
     return (
-        <nav className="navbar lg:flex justify-evenly  xl:px-16 items-center fixed w-full z-50 navbar-container">
+        <nav className={`navbar lg:flex justify-evenly  xl:px-16 items-center fixed w-full z-50 ${styles.navbar_container}`}>
             <Link href={"/"}>
                 <Image
                     src={logo}
@@ -16,7 +16,7 @@ export default function Navbar2() {
                     priority={true}
                     height={47}
                     placeholder="blur"
-                    className="object-contain logo-website z-50 px-5"
+                    className={`object-contain ${styles.logo_website} z-50 px-5`}
                 />
             </Link>
             <Link
@@ -28,46 +28,46 @@ export default function Navbar2() {
             </Link>
             <ul
                 className={`${
-                    isMobile ? "nav-links-mobile" : "nav-links"
+                    isMobile ? `${styles.nav_links_mobile}` : `${styles.nav_links}`
                 } flex justify-around items-center lg:gap-x-5`}
             >
                 <li onClick={() => setIsMobile(!isMobile)}>
                     <Link href={"/about"}>About Me</Link>
                 </li>
-                <li className="navbar-dropdown">
-                    <Link href={"/services"}>Services</Link>
+                <li className={`${styles.navbar_dropdown}`}>
+                    <Link href={"/service"}>Services</Link>
                     <ul className="dropdown-menu">
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/ecommerce-seo"}>E Commerce Seo</Link>
+                            <Link href={"/service/ecommerce-seo"}>E Commerce Seo</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/keyword-research"}>Keyword Research</Link>
+                            <Link href={"/service/keyword-research"}>Keyword Research</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/local-seo"}>Local Seo</Link>
+                            <Link href={"/service/local-seo"}>Local Seo</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/seo-consulting"}>Seo Consulting</Link>
+                            <Link href={"/service/seo-consulting"}>Seo Consulting</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/wix-seo"}>Wix Seo</Link>
+                            <Link href={"/service/wix-seo"}>Wix Seo</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/squaresapce-seo"}>Squarespace Seo</Link>
+                            <Link href={"/service/squaresapce-seo"}>Squarespace Seo</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/technical-seo"}>Technical Seo</Link>
+                            <Link href={"/service/technical-seo"}>Technical Seo</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/seo-audit"}>Seo Audit</Link>
+                            <Link href={"/service/seo-audit"}>Seo Audit</Link>
                         </li>
                         <li onClick={() => setIsMobile(!isMobile)}>
-                            <Link href={"/services/seo-services"}>Seo Services</Link>
+                            <Link href={"/service/seo-service"}>Seo Services</Link>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <Link href={"/services/seo-consulting"}>Seo Consulting</Link>
+                    <Link href={"/service/seo-consulting"}>Seo Consulting</Link>
                 </li>
                 <li>
                     <Link href={"/portfolio"}>Portfolio</Link>
@@ -84,7 +84,7 @@ export default function Navbar2() {
             </ul>
 
             <button
-                className="mobile-menu-icon absolute right-0 mr-5 lg:hidden"
+                className=" absolute right-0 mr-5 lg:hidden"
                 aria-label="menu button for mobile view"
                 onClick={() => {
                     setIsMobile(!isMobile);
@@ -95,7 +95,7 @@ export default function Navbar2() {
                 ) : (
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="fill-bg dark:fill-gray-800"
+                        className="fill-bg dark:fill-gray-800"
                         width="32"
                         height="32"
                         viewBox="0 0 24 24"

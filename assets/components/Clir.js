@@ -14,7 +14,7 @@ export default function Clir(props) {
                 <Button btnTxt={props.btnTxt} path={props.path}/>
             </section>
             <section className="flex justify-center">
-                <Image src={props.src} width={500} height={500} alt={props.heading}/>
+                <Image src={props.src} width={500} height={350} alt={props.heading}/>
             </section>
         </main>
     );
