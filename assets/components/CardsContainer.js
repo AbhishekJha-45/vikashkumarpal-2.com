@@ -21,7 +21,6 @@ export default function CardsContainer(props) {
             {data &&
                 data.splice(0, 6).map((post, index) => {
                     const {title, slug, featuredImage, seo} = post;
-                    console.log(title)
                     return (
                         <div className="col-span-1" key={index}>
                             <div className="data-sec-7 shadow-home rounded-md px-5 py-5 h-full">

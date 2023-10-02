@@ -7,6 +7,7 @@ export default function customHead(props) {
     const schema = seo.jsonLd.raw;
     const regexPattern = /<script type="application\/ld\+json" class="rank-math-schema">(.*?)<\/script>/s;
     const schemaJson = schema.match(regexPattern)[1];
+    const uppdatedTime = seo.openGraph.updatedTime ? seo.openGraph.updatedTime : date;
     // console.log(schemaJson)
     return (
         <Head>
@@ -31,7 +32,7 @@ export default function customHead(props) {
             <meta name="twitter:site" content="@vikashkumarpal"/>
             <meta name="twitter:creator" content="@vikashkumarpal"/>
             <meta name="date" content={date}/>
-            <meta name="last-modified" content={seo.openGraph.updatedTime}/>
+            <meta name="last-modified" content={uppdatedTime}/>
             <script type="application/ld+json" dangerouslySetInnerHTML={{__html: schemaJson}}/>
         </Head>
     )

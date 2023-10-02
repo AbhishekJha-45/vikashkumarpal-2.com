@@ -1,4 +1,4 @@
-import Header from "@utils/Header";
+ import Header from "@utils/Header";
 import getHeader from "@utils/graphQlquery";
 export async function getStaticProps() {
     const headerData = await getHeader('privacy-policy');

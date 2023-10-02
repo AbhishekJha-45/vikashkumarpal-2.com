@@ -30,7 +30,7 @@ export default function Home_Section_2() {
                         traffic and revenue, get in touch with Vikash for SEO consulting
                         services.
                     </p>
-                    <Button btnTxt="Get In Touch" path="/contact"/>
+                   <div className='lg:pt-5'> <Button btnTxt="Get In Touch" path="/contact"/></div>
                 </section>
             </div>
         </main>

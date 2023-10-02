@@ -29,7 +29,7 @@ export default function Home({images,headerData}) {
             <Home_Section_2/>
             <Home_Section_3 images={images}/>
             <Home_section_4/>
-            {/*<Home_Section_5/>*/}
+            <Home_Section_5/>
             <Home_Section_6/>
             <Home_Section_7/>
             <Home_Section_8/>

@@ -1,5 +1,4 @@
 import graphQlReq from ".//GraphQlReq";
-
 const serverUrl = "https://admin.vikashkumarpal.com/graphql";
 
 export async function getAllBlogPosts() {
@@ -404,8 +403,6 @@ query getCaseStudyPageData {
     }
 }
 
-
-
 export async function getCaseStudiesCards() {
     const apiUrl = 'https://admin.vikashkumarpal.com/graphql';
 
@@ -514,6 +511,130 @@ export async function getClientLogos() {
     } catch (error) {
         console.error('Error fetching client logos:', error);
         return [];
+    }
+}
+
+export async function getCaseStudyBySlug(slug) {
+    const apiUrl = serverUrl;
+
+    // Define the GraphQL query with the 'slug' variable
+    const graphqlQuery = `
+query getCaseStudyBySlug($slug: String!) {
+  caseStudies(
+    where: {name: $slug}
+  ) {
+      edges {
+      node {
+        title
+        date
+        seo {
+          canonicalUrl
+          description
+          jsonLd {
+            raw
+          }
+          robots
+          openGraph {
+            title
+            image{
+              url
+            }
+            description
+            locale
+            updatedTime
+          }
+        }
+        featuredImage {
+          node {
+            mediaItemUrl
+            altText
+            author {
+              node {
+                name
+              }
+            }
+          }
+        }
+        singleCaseStudy {
+          csParaHero
+          csHeroCta
+          csHeroHighlights {
+            csHighlightIcon1 {
+              mediaItemUrl
+            }
+            csHighlightNumber1
+            csHighlightText1
+            csHighlightIcon2 {
+              mediaItemUrl
+            }
+            csHighlightNumber2
+            csHighlightText2
+            csHighlightIcon1 {
+              mediaItemUrl
+            }
+            csHighlightIcon3 {
+              mediaItemUrl
+            }
+            csHighlightNumber3
+            csHighlightText3
+          }
+          csInnerHeading1
+          csInnerContent1
+          csInnerCtaButton
+          csImage1 {
+            mediaItemUrl
+          }
+          csInnerHeading2
+          csInnerContent2
+          csImage2 {
+            mediaItemUrl
+          }
+          csInnerHeading3
+          csInnerContent3
+          csImage3 {
+            mediaItemUrl
+          }
+          csInnerHeading4
+          csInnerContent4
+          csImage4 {
+            mediaItemUrl
+          }
+          csInnerHeading5
+          csInnerContent5
+          csImage5 {
+            mediaItemUrl
+          }
+          csCtaHeading
+        }
+      }
+    }
+  }
+}
+  `;
+
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                query: graphqlQuery,
+                variables: { slug }, // Pass the 'slug' variable here
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error('GraphQL request failed');
+        }
+
+        const data = await response.json();
+        const caseStudy = data.data.caseStudies.edges[0].node;
+
+        return caseStudy;
+    } catch (error) {
+        console.error('Error fetching case study:', error);
+        return null;
     }
 }
 
