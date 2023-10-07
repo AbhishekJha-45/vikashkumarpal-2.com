@@ -638,3 +638,25 @@ query getCaseStudyBySlug($slug: String!) {
     }
 }
 
+export async function getSitemapData(query, variables = {}) {
+    try {
+        const response = await fetch(serverUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ query, variables }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`WordPress API request failed with status ${response.status}`);
+        }
+
+        // Parse the response JSON
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching WordPress data:', error);
+        throw error;
+    }
+}

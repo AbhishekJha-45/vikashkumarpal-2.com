@@ -2,6 +2,7 @@
 const nextConfig = {
     reactStrictMode: false,
     trailingSlash: true,
+    // staticPageGenerationTimeout: 1000,
     images: {
         remotePatterns: [
             {

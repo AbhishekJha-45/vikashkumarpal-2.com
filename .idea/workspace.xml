@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="header Updated">
-      <change afterPath="$PROJECT_DIR$/assets/components/PostNotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/SetInnerHtml.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="individual casestudy updated">
+      <change afterPath="$PROJECT_DIR$/pages/sitemap-blog.xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/sitemap-case-study.xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/sitemap-pages.xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/sitemap-service.xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/sitemap.authors.xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/sitemap.xml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/components/CardsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/CardsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/Home_Section_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Home_Section_2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/blog/[slug]/customHead.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[slug]/customHead.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/case-study/[slug]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/case-study/[slug]/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/privacy-policy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/privacy-policy/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/case-study/latestposts/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/case-study/latestposts/page.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/graphQlquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/graphQlquery.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,6 +132,9 @@
       <workItem from="1696145344050" duration="17367000" />
       <workItem from="1696231870696" duration="533000" />
       <workItem from="1696234243017" duration="8133000" />
+      <workItem from="1696267834878" duration="1966000" />
+      <workItem from="1696599331420" duration="1759000" />
+      <workItem from="1696602672625" duration="16299000" />
     </task>
     <task id="LOCAL-00002" summary="header Updated">
       <option name="closed" value="true" />
@@ -141,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696142746119</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="individual casestudy updated">
+      <option name="closed" value="true" />
+      <created>1696267922628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696267922628</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +190,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="nextjs 12 application initial commit" />
     <MESSAGE value="header Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="header Updated" />
+    <MESSAGE value="individual casestudy updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="individual casestudy updated" />
   </component>
 </project>

@@ -1,33 +1,15 @@
 import Head from "next/head";
-
-
 export default function Header({headerData}) {
-    // const [headerData, setHeaderData] = useState(null);
-    // useEffect(() => {
-    //     async function fetchData() {
-    //         try {
-    //             const data = await getHeader(pageName);
-    //             setHeaderData(data);
-    //         } catch (error) {
-    //             console.error('Error fetching header data:', error);
-    //         }
-    //     }
-    //
-    //     fetchData();
-    // }, [pageName]);
-    //
-    // // Check if data is still loading
-    // if (!headerData) {
-    //     return <p>Loading...</p>;
-    // }
 
-    // Destructure the header data
     const {title, slug, dateGmt, author, seo, featuredImage} = headerData;
 
     const jsonLd = seo?.jsonLd.raw;
     const image = featuredImage?.node?.mediaItemUrl ? featuredImage.node.mediaItemUrl : 'https://admin.vikashkumarpal.com/wp-content/uploads/2023/08/vikash.webp';
     const regexPattern = /<script type="application\/ld\+json" class="rank-math-schema">(.*?)<\/script>/s;
     const schemaJson = jsonLd ? jsonLd.match(regexPattern)[1] : null;
+    const replacedData = schemaJson.replace(/"https:\/\/admin\.vikashkumarpal\.com(?!\/wp-content\/uploads\/\d{4}\/\d{2})/g, '"https://vikashkumarpal.com');
+
+
     return (
         <Head>
             <title>{title}</title>
@@ -52,7 +34,7 @@ export default function Header({headerData}) {
             <meta name="twitter:creator" content="@vikashkumarpal"/>
             <meta name="date" content={dateGmt}/>
             <meta name="last-modified" content={seo.openGraph.updatedTime}/>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: schemaJson}}/>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: replacedData}}/>
         </Head>
     );
 }

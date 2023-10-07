@@ -32,13 +32,10 @@ function createMarkup(content) {
 export default function index({post}) {
     const {
         title,
-        slug,
-        excerpt,
         author,
         featuredImage,
         content,
         date,
-        modified,
         table_of_contents,
         categories,
         seo

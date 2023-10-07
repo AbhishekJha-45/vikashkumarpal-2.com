@@ -8,6 +8,8 @@ export default function customHead(props) {
     const regexPattern = /<script type="application\/ld\+json" class="rank-math-schema">(.*?)<\/script>/s;
     const schemaJson = schema.match(regexPattern)[1];
     const uppdatedTime = seo.openGraph.updatedTime ? seo.openGraph.updatedTime : date;
+    const replacedData = schemaJson.replace(/"https:\/\/admin\.vikashkumarpal\.com(?!\/wp-content\/uploads\/\d{4}\/\d{2})/g, '"https://vikashkumarpal.com');
+
     // console.log(schemaJson)
     return (
         <Head>
@@ -33,7 +35,7 @@ export default function customHead(props) {
             <meta name="twitter:creator" content="@vikashkumarpal"/>
             <meta name="date" content={date}/>
             <meta name="last-modified" content={uppdatedTime}/>
-            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: schemaJson}}/>
+            <script type="application/ld+json" dangerouslySetInnerHTML={{__html: replacedData}}/>
         </Head>
     )
 }

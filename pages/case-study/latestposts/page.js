@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 // import dynamic from "next/dynamic";
 // import Loading from "@/app/loading";
-import CardsInfiniteScroll from "@/components/CardsInfiniteScroll";
+// import CardsInfiniteScroll from "@/components/CardsInfiniteScroll";
 // const CardsInfiniteScroll = dynamic(
 //   () => import("@/components/CardsInfiniteScroll"),
 //   {
@@ -26,8 +26,8 @@ export default async function page() {
     <Suspense fallback={<p>loading posts...</p>}>
       <main className="container-services pt-16 md:px-5">
         <div className="">
-          <CardsInfiniteScroll type={'case-study'}/>
-        </div>
+          {/*<CardsInfiniteScroll type={'case-study'}/>*/}
+        </div>cd
       </main>
     </Suspense>
   );
