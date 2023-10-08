@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="individual casestudy updated">
-      <change afterPath="$PROJECT_DIR$/pages/sitemap-blog.xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/sitemap-case-study.xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/sitemap-pages.xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/sitemap-service.xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/sitemap.authors.xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/sitemap.xml.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/CardsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/CardsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog/[slug]/customHead.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog/[slug]/customHead.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/case-study/latestposts/page.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/case-study/latestposts/page.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/graphQlquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/graphQlquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,6 +123,8 @@
       <workItem from="1696267834878" duration="1966000" />
       <workItem from="1696599331420" duration="1759000" />
       <workItem from="1696602672625" duration="16299000" />
+      <workItem from="1696744557170" duration="2601000" />
+      <workItem from="1696748377812" duration="608000" />
     </task>
     <task id="LOCAL-00002" summary="header Updated">
       <option name="closed" value="true" />
