@@ -3,7 +3,7 @@ FROM node:16.20.2
 
 
 # Set the working directory inside the container
-WORKDIR .
+WORKDIR /home/abhishek_jha/Desktop/githubClone/vikashkumarpal-2.com/Dockerfile
 
 # Copy package.json and yarn.lock to the working directory
 COPY package*.json package-lock.json ./
@@ -15,7 +15,7 @@ RUN npm install
 COPY . .
 
 # Build your Next.js app
-RUN npm build --production
+RUN npm run build
 
 # Expose the port your app will run on
 EXPOSE 3000
