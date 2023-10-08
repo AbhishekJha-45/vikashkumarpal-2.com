@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="individual casestudy updated">
+    <list default="true" id="25f16a09-445d-43f4-a15f-6c98570c4134" name="Changes" comment="docker added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -124,7 +125,7 @@
       <workItem from="1696599331420" duration="1759000" />
       <workItem from="1696602672625" duration="16299000" />
       <workItem from="1696744557170" duration="2601000" />
-      <workItem from="1696748377812" duration="608000" />
+      <workItem from="1696748377812" duration="2227000" />
     </task>
     <task id="LOCAL-00002" summary="header Updated">
       <option name="closed" value="true" />
@@ -142,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696267922628</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="docker added">
+      <option name="closed" value="true" />
+      <created>1696749318032</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696749318032</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +190,7 @@
     <MESSAGE value="nextjs 12 application initial commit" />
     <MESSAGE value="header Updated" />
     <MESSAGE value="individual casestudy updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="individual casestudy updated" />
+    <MESSAGE value="docker added" />
+    <option name="LAST_COMMIT_MESSAGE" value="docker added" />
   </component>
 </project>
